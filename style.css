@@ -1,0 +1,383 @@
+.search {
+    border-radius: 20px;
+    width: 250px;
+    padding-left: 35px;
+}
+
+.search-wrapper {
+    position: relative;
+}
+
+.search-wrapper::before {
+    content: "\F52A";
+    /* bootstrap icon */
+    font-family: "bootstrap-icons" !important;
+    /* kesin yükleniyor */
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #030303;
+}
+
+.nav-vertical {
+    display: flex;
+    flex-direction: column;
+    /* alt alta */
+    align-items: center;
+    /* ortala */
+    justify-content: center;
+    text-decoration: none;
+    color: #4a4b4d;
+    padding: 0 8px;
+}
+
+.body-color {
+    background-color: #f4f2ee;
+}
+
+.text-decoration {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #4a4b4d;
+    margin-bottom: 3px;
+}
+
+.text-decoration:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.profile-img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.navbar-text-link {
+    text-decoration: underline;
+    color: #915907
+}
+
+
+.card-radius {
+    border-radius: 15px;
+}
+
+.h6Text {
+    font-size: 13px;
+    color: #4c4c4e;
+}
+
+.pText {
+    font-size: 12px;
+    color: #5c5c5e;
+}
+
+.position-relative {
+    width: 200px;
+}
+
+.position-relative:hover {
+    border-style: dotted;
+    border-color: #a3a3a5;
+}
+
+.plusicon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #0f0f0f;
+}
+
+.profileAnalyze {
+    font-size: 13px;
+}
+
+#viewText {
+    color: rgb(56, 120, 240);
+    font-weight: bolder;
+}
+
+.avantageText {
+    font-size: 13px;
+}
+
+.groupText {
+    font-size: 13px;
+}
+
+.groupText:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#squareIcon {
+    color: rgb(190, 142, 9);
+    font-size: 12px;
+}
+
+.iconText {
+    font-size: 12px;
+}
+
+.iconText:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(74, 74, 235)
+}
+
+.groupIcon {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+}
+
+#profile-img-post {
+    width: 50px;
+    height: 50px;
+}
+
+/* Kart içindeki tüm flex yapıları sarmalayabilsin */
+.card .d-flex {
+    flex-wrap: wrap;
+}
+
+/* Input ve içindeki wrapper her ekrana uyum sağlasın */
+.position-relative {
+    width: 100% !important;
+}
+
+/* Input her ekrana sığsın */
+.position-relative input {
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+/* Uzun yazılar taşmasın */
+.card-text,
+.card-title,
+.pText,
+.h6Text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.post-input-row {
+    flex-wrap: nowrap !important;
+}
+
+#startPost {
+    height: 50px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#startPost:hover {
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+.videoIcon {
+    color: rgb(15, 167, 15);
+    font-size: 18px;
+}
+
+.imageIcon {
+    color: rgb(56, 124, 212);
+    font-size: 18px;
+}
+
+.textIcon {
+    color: rgb(155, 28, 28);
+    font-size: 20px;
+}
+
+.divider-line {
+    border-bottom: 1px solid #ccc;
+}
+
+.divider-text {
+    font-size: 13px;
+    color: #555454;
+    white-space: nowrap;
+}
+
+.divider-text:hover {
+    cursor: pointer;
+}
+
+.img-size {
+    width: 50px;
+    height: 50px;
+}
+
+.text-name {
+    font-size: 14px;
+}
+
+.follow-text {
+    font-size: 11px;
+}
+
+.icon-size {
+    font-size: 13px;
+    color: #707074;
+}
+
+.icon-name {
+    font-size: 13px;
+}
+
+.info-right p {
+    line-height: 1.1;
+    /* 1 → çok sıkı, 1.2 → ideal */
+}
+
+.font-size {
+    font-size: 14px;
+}
+
+.reactions-icon {
+    width: 20px;
+}
+
+.number-text {
+    font-size: 12px;
+}
+
+.alex-channel {
+    font-size: 14px;
+    margin-top: 13px;
+}
+
+.followHref {
+    font-size: 14px;
+    font-weight: 650;
+}
+
+.img-interpretation {
+    width: 20px;
+    height: 20px;
+}
+
+.interpretation {
+    font-size: 12px;
+}
+
+.inline-text {
+    display: inline-flex;
+    align-items: center;
+}
+
+.work-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+}
+
+.img-size-interpretative {
+    width: 30px;
+    height: 30px;
+}
+
+.text-name-interpretative {
+    font-size: 12px;
+}
+
+.icon-name-interpretative {
+    font-size: 12px;
+}
+
+.follow-text-interpretative {
+    font-size: 10px;
+}
+
+.interpretation-time {
+    font-size: 12px;
+}
+
+.interpretative {
+    font-size: 13px;
+    margin-left: 40px;
+    line-height: 0.9;
+}
+
+.size-icon {
+    font-size: 13px;
+    color: black;
+}
+
+.information-icon {
+    font-size: 13px;
+}
+
+.news-size {
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+}
+
+.news-size:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.news-info-size {
+    font-size: 10px;
+}
+
+.chevron-icon:hover {
+    cursor: pointer;
+}
+
+.play-img-size {
+    width: 50px;
+    height: 50px;
+}
+
+.clue{
+    color:rgb(150, 78, 150);
+    background-color: #f0bd70 ;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.clue-text:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.end-text{
+    font-size: 11px;
+}
+
+.end-text:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.end-logo-text{
+    font-size: 12px;
+    color:rgb(43, 100, 207);
+}
+
+.end-text-linkedin{
+    font-size: 11px;
+}
+
+.linkedin-logo{
+    width: 16px;
+    height: 16px;
+    color:rgb(43, 100, 207);
+}

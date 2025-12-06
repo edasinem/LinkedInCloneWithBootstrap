@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>LinkedIn</title>
+</head>
+
+<body class="body-color">
+    <header>
+        <nav class="navbar fixed-top navbar-light bg-light d-flex align-items-center border-bottom px-3">
+            <!-- Navbar - Sol -->
+            <div class="d-flex align-items-center me-3">
+                <a class="navbar-brand p-0" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                        fill="currentColor" class="mercado-match" width="34" height="34" color="#0e76a8"
+                        focusable="false">
+                        <path
+                            d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                        </path>
+                    </svg>
+                </a>
+                <div class="search-wrapper ms-2">
+                    <input type="text" class="form-control search" placeholder="Arama yap">
+                </div>
+            </div>
+            <!-- Navbar - Sağ -->
+            <div class="d-flex align-items-center">
+                <!-- İlk ikon grubu, border-right olacak -->
+                <div class="d-flex align-items-center border-end pe-2 me-2">
+                    <a class="nav-vertical mt-2" href="#">
+                        <i class="bi bi-house-door-fill nav-vertical"></i>
+                        <span class="text-decoration">Ana Sayfa</span>
+                    </a>
+                    <a class="nav-vertical mt-2" href="#">
+                        <i class="bi bi-people-fill nav-vertical"></i>
+                        <span class="text-decoration">Ağım</span>
+                    </a>
+                    <a class="nav-vertical mt-2" href="#">
+                        <i class="bi bi-briefcase-fill nav-vertical"></i>
+                        <span class="text-decoration">İş İlanları</span>
+                    </a>
+                    <a class="nav-vertical mt-2" href="#">
+                        <i class="bi bi-chat-dots-fill nav-vertical"></i>
+                        <span class="text-decoration">Mesajlaşma</span>
+                    </a>
+                    <a class="nav-vertical mt-2" href="#">
+                        <i class="bi bi-bell-fill nav-vertical"></i>
+                        <span class="text-decoration">Bildirimler</span>
+                    </a>
+                    <a class="nav-vertical" href="#">
+                        <img src="image/profile.png" class="rounded border border-dark rounded-circle profile-img"
+                            alt="profile">
+                        <span class="text-decoration text-inline">
+                            Ben <i class="bi bi-caret-down-fill"></i>
+                        </span>
+                    </a>
+                </div>
+                <!-- diğerleri -->
+                <div class="d-flex align-items-center border-left">
+                    <a class="nav-vertical" href="#">
+                        <i class="bi bi-grid-3x3-gap-fill nav-vertical"></i>
+                        <span class="text-decoration text-inline">
+                            İş için <i class="bi bi-caret-down-fill"></i>
+                        </span>
+                    </a>
+                    <a class="nav-vertical ms-2" href="#">
+                        <span class="navbar-text-link">0 TRY ile Premium'u</span>
+                        <span class="navbar-text-link">deneyin</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5 pt-4">
+        <section class="row">
+            <article class="col-12 col-md-3">
+                <div class="card card-radius">
+                    <img src="image/profile-background.jpg" class="card-img-top card-radius"
+                        alt="profile and background">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <h5 class="card-title mr-2">Eda Sinem Bora</h5> <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h6 class="card-text h6Text">Frontend Developer</h6>
+                        <p class="card-text pText">Sivas, Sivas</p>
+                        <div class="position-relative">
+                            <input type="text" class="form-control pl-5" placeholder="Deneyim">
+                            <i class="bi bi-plus-lg plusicon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-radius mt-2">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <p class="card-text font-weight-bold profileAnalyze">Profilinizi görüntüleyenler</p>
+                            <p class="card-text profileAnalyze" id="viewText">12</p>
+                        </div>
+                        <p class="card-text font-weight-bold profileAnalyze">Tüm analizleri görüntüle</p>
+                    </div>
+                </div>
+
+                <div class="card card-radius mt-2">
+                    <div class="card-body">
+                        <p class="card-text text-muted avantageText">Ücretsiz avantajlara, gelişmiş araçlara ve özel
+                            sohbetlere erişin</p>
+                        <div class="d-flex">
+                            <i class="bi bi-square-fill mr-2" id="squareIcon"></i>
+                            <p class="card-text font-weight-bold iconText">0 TRY ile Premium'u deneyin</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-radius mt-2">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <i class="bi bi-bookmark-fill mr-2 groupIcon"></i>
+                            <p class="card-text font-weight-bold groupText">Kaydedilen ögeler</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bi bi-people-fill mr-2 groupIcon"></i>
+                            <p class="card-text font-weight-bold groupText">Gruplar</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bi bi-newspaper mr-2 groupIcon"></i>
+                            <p class="card-text font-weight-bold groupText">Haber bültenleri</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bi bi-calendar-event mr-2 groupIcon"></i>
+                            <p class="card-text font-weight-bold groupText">Etkinlikler</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-12 col-md-6 mb-3">
+                <div class="card card-radius">
+                    <div class="card-body">
+                        <div class="d-flex post-input-row">
+                            <img src="image/profile.png" id="profile-img-post"
+                                class="rounded border border-dark rounded-circle" alt="profile">
+                            <input type="text" id="startPost" class="form-control rounded-pill ml-2"
+                                placeholder="Gönderi başlatın">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 px-3 icons-row">
+                            <!-- Sol: Video -->
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-youtube videoIcon"></i>
+                                <span class="iconText ml-2 font-weight-bold">Video</span>
+                            </div>
+
+                            <!-- Orta: Fotoğraf -->
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-image-fill imageIcon"></i>
+                                <span class="iconText ml-2 font-weight-bold">Fotoğraf</span>
+                            </div>
+
+                            <!-- Sağ: Diğer -->
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-blockquote-left textIcon"></i>
+                                <span class="iconText ml-2 font-weight-bold">Yazı yaz</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider-row d-flex align-items-center mt-3">
+                    <div class="flex-grow-1 divider-line"></div>
+                    <span class="divider-text ml-3">Sıralama ölçütü: <b>En Önemli <i
+                                class="bi bi-caret-down-fill"></i></b>
+                    </span>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="d-flex justify-content-between border-bottom align-items-center">
+                        <div class="d-flex p-2 ml-1 mt-1">
+                            <img src="image/orangewomen.png" class="card-img-top ml-2 mr-1 mt-1 img-interpretation"
+                                alt="boy">
+                            <p class="font-weight-bold mr-1 mt-1 interpretation">Jennifer</p>
+                            <p class="text-muted mt-1 interpretation">buna yorum yaptı</p>
+                        </div>
+                        <div class="d-flex p-2">
+                            <i class="bi bi-three-dots mr-2"></i>
+                            <i class="bi bi-x-lg"></i>
+                        </div>
+                    </div>
+                    <div class="divider-row d-flex align-items-center">
+                        <div class="d-flex mr-auto p-2">
+                            <img src="image/curlywomen.png" class="card-img-top ml-2 img-size" alt="boy">
+                            <div class="d-flex flex-column ml-3 info-right">
+                                <div class="d-flex">
+                                    <p class="divider-text font-weight-bold my-0 text-name">Lana Del</p>
+                                    <i class="bi bi-linkedin ml-1 text-warning icon-name"></i>
+                                    <p class="ml-1 my-0">.</p>
+                                    <p class="text-muted ml-1 mt-1 my-0 follow-text">2.</p>
+                                </div>
+                                <p class="text-muted follow-text my-0 mt-1">Computer Engineer</p>
+                                <div class="d-flex">
+                                    <p class="text-muted mt-1 follow-text">2 gün</p>
+                                    <p class="ml-1">.</p>
+                                    <i class="bi bi-globe-americas ml-2 icon-size"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex p-2 align-self-start">
+                            <a href="#" class="text-decoration-none followHref mr-2"> + Takip Et</a>
+                        </div>
+                    </div>
+                    <div class="d-flex ml-3">
+                        <p class="font-size"><a href="#" class="text-decoration-none work-link">Bootstrap</a>
+                            şirketinde System Monitoring olarak çalışmaya başladığımı paylaşmaktan mutluluk duyuyorum!
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex border-bottom">
+                            <img src="image/newjob.png" class="card-img-top post-image" alt="ellips">
+                            <div class="d-flex mr-auto p-2 mt-1">
+                                <img class="reactions-icon"
+                                    src="https://static.licdn.com/aero-v1/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="like">
+                                <img class="reactions-icon"
+                                    src="https://static.licdn.com/aero-v1/sc/h/b1dl5jk88euc7e9ri50xy5qo8"
+                                    alt="celebrate">
+                                <img class="reactions-icon"
+                                    src="https://static.licdn.com/aero-v1/sc/h/cpho5fghnpme8epox8rdcds22" alt="love">
+                                <span class="text-truncate text-muted ml-1">85</span>
+                            </div>
+                            <div class="d-flex p-2 mt-1">
+                                <span class="text-truncate text-muted ml-1">15 yorum</span>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2">
+                            <button type="button" class="btn btn-light"><i class="bi bi-hand-thumbs-up"></i>
+                                Beğen</button>
+                            <button type="button" class="btn btn-light"><i class="bi bi-chat-text"></i> Yorum
+                                Yap</button>
+                            <button type="button" class="btn btn-light"><i class="bi bi-repeat"></i> Paylaş</button>
+                            <button type="button" class="btn btn-light"><i class="bi bi-send-fill"></i> Gönder</button>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-start mt-2">
+                            <div class="d-flex">
+                                <img src="image/orangewomen.png" class="card-img-top ml-1 img-size-interpretative"
+                                    alt="orangewomen">
+                                <div class="d-flex flex-column ml-2 info-right">
+                                    <div class="d-flex">
+                                        <p class="divider-text font-weight-bold my-0 text-name-interpretative">Jennifer
+                                        </p>
+                                        <i class="bi bi-linkedin ml-1 text-warning icon-name-interpretative"></i>
+                                        <p class="ml-1 my-0">.</p>
+                                        <p class="text-muted ml-1 mt-1 my-0 follow-text">1.</p>
+                                    </div>
+                                    <p class="text-muted follow-text-interpretative my-0 mt-1">SOC Analyst | Splunk</p>
+                                </div>
+                            </div>
+                            <div class="d-flex p-2 align-self-start">
+                                <p class="interpretation-time text-muted mr-2">1 gün</p>
+                                <i class="bi bi-three-dots mr-1 text-muted"></i>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <p class="interpretative">Harika bir haber, tebrikler Lana! 🎉</p>
+                            <p class="text-muted interpretative">Beğen | Yanıtla</p>
+                        </div>
+                        <div class="d-flex align-item-start">
+                            <i class="bi bi-arrows-angle-expand size-icon mr-2"></i>
+                            <p class="icon-name-interpretative mt-1">Daha fazla yorum yükle</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="divider-row d-flex align-items-center">
+                        <div class="d-flex mr-auto p-2">
+                            <img src="image/boy.png" class="card-img-top ml-2 img-size" alt="boy">
+                            <div class="d-flex flex-column ml-3 info-right">
+                                <div class="d-flex">
+                                    <p class="divider-text font-weight-bold my-0 text-name">Vincas Stonys</p>
+                                    <i class="bi bi-shield-check ml-1 icon-name"></i>
+                                    <p class="ml-1 my-0">.</p>
+                                    <p class="text-muted ml-1 mt-1 my-0 follow-text">Takip Edilenler</p>
+                                </div>
+                                <p class="text-muted follow-text my-0 mt-1">Front-End Engineer, Educator</p>
+                                <div class="d-flex">
+                                    <p class="text-muted mt-1 follow-text">1 hafta</p>
+                                    <p class="ml-1">.</p>
+                                    <i class="bi bi-globe-americas ml-2 icon-size"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex p-2 align-self-start">
+                            <i class="bi bi-three-dots mr-2"></i>
+                            <i class="bi bi-x-lg"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column ml-3 info-right">
+                        <p class="font-size">Truncate text with text ellipsis in CSS</p>
+                        <p class="text-muted font-size">Çeviriyi göster</p>
+                        <a href="#" class="text-decoration-none font-size">DeepL ile çevir</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex border-bottom">
+                            <img src="image/ellips.png" class="card-img-top post-image" alt="ellips">
+                            <div class="d-flex mr-auto p-2 mt-1">
+                                <img class="reactions-icon"
+                                    src="https://static.licdn.com/aero-v1/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="like">
+                                <img class="reactions-icon"
+                                    src="https://static.licdn.com/aero-v1/sc/h/lhxmwiwoag9qepsh4nc28zus"
+                                    alt="insightful">
+                                <img class="reactions-icon"
+                                    src="https://static.licdn.com/aero-v1/sc/h/b1dl5jk88euc7e9ri50xy5qo8"
+                                    alt="celebrate">
+                                <span class="text-truncate text-muted ml-1">58</span>
+                            </div>
+                            <div class="d-flex p-2 mt-1">
+                                <span class="text-truncate text-muted ml-1">3 Paylaşım</span>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2">
+                            <button type="button" class="btn btn-light"><i class="bi bi-hand-thumbs-up"></i>
+                                Beğen</button>
+                            <button type="button" class="btn btn-light"><i class="bi bi-chat-text"></i> Yorum
+                                Yap</button>
+                            <button type="button" class="btn btn-light"><i class="bi bi-repeat"></i> Paylaş</button>
+                            <button type="button" class="btn btn-light"><i class="bi bi-send-fill"></i> Gönder</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="divider-row d-flex align-items-center">
+                        <div class="d-flex mr-auto p-2">
+                            <img src="image/firstperson.png" class="card-img-top ml-2 img-size" alt="boy">
+                            <div class="d-flex flex-column ml-3 info-right">
+                                <div class="d-flex">
+                                    <p class="divider-text font-weight-bold my-0 alex-channel">Alex Chanel</p>
+                                    <i class="bi bi-linkedin ml-1 text-warning icon-name"></i>
+                                    <p class="ml-1 my-0">.</p>
+                                    <p class="text-muted ml-1 mt-1 my-0 number-text">1</p>
+                                </div>
+                                <p class="text-muted follow-text my-0 mt-1">.NET Developer | Yazılım Geliştirme Uzmanı |
+                                    EF Core</p>
+                                <div class="d-flex my-0">
+                                    <p class="text-muted mt-1 follow-text">3 gün</p>
+                                    <p class="ml-1">.</p>
+                                    <p class="ml-1 mt-1 text-muted follow-text">Düzenlendi</p>
+                                    <p class="ml-1">.</p>
+                                    <i class="bi bi-globe-americas ml-2 icon-size"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex p-2 align-self-start">
+                            <a href="#" class="text-decoration-none followHref mr-2"> + Takip Et</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column ml-3 info-right">
+                        <p class="font-size">🚀 C# 14 ile Gelen Extension Properties: Artık Gerçek ve Çok Daha Etkili!
+                        </p>
+                        <p class="font-size">C# uzun süredir “extension method” desteğine sahipti, ancak bu yaklaşım
+                            yalnızca davranış
+                            eklemeye izin veriyordu. Bazı senaryolarda bir tipe özellik eklemek daha doğal ve daha
+                            okunabilir sonuçlar getiriyordu. <a href="#" class="text-decoration-none font-size">...daha
+                                fazlası</a>
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex border-bottom">
+                            <img src="image/.Net.png" class="card-img-top post-image" alt="ellips">
+                            <div class="d-flex mr-auto p-2 mt-1">
+                                <img class="reactions-icon"
+                                    src="https://static.licdn.com/aero-v1/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="like">
+                                <img class="reactions-icon"
+                                    src="https://static.licdn.com/aero-v1/sc/h/cpho5fghnpme8epox8rdcds22" alt="love">
+                                <img class="reactions-icon"
+                                    src="https://static.licdn.com/aero-v1/sc/h/b1dl5jk88euc7e9ri50xy5qo8"
+                                    alt="celebrate">
+                                <span class="text-truncate text-muted ml-1">12</span>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2">
+                            <button type="button" class="btn btn-light"><i class="bi bi-hand-thumbs-up"></i>
+                                Beğen</button>
+                            <button type="button" class="btn btn-light"><i class="bi bi-chat-text"></i> Yorum
+                                Yap</button>
+                            <button type="button" class="btn btn-light"><i class="bi bi-repeat"></i> Paylaş</button>
+                            <button type="button" class="btn btn-light"><i class="bi bi-send-fill"></i> Gönder</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <aside class="col-12 col-md-3">
+                <div class="card rounded-lg p-3" style="width: 18rem;">
+                    <div class="d-flex">
+                        <div class="d-flex mr-auto mt-1">
+                            <h6 class="card-title">LinkedIn Haberler</h6>
+                        </div>
+                        <div class="d-flex mt-1">
+                            <i class="bi bi-info-square-fill information-icon"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <p class="text-muted news-size">Öne çıkan hikayeler</p>
+                        <p class="font-weight-bold news-size mb-1">Netflix-Warner Bros. Discovery deal f...</p>
+                        <p class="text-muted news-info-size mt-0">3s önce . 2.595 okuyucu</p>
+                        <p class="font-weight-bold news-size mb-1">Meta acquires AI-wearable startup Li...</p>
+                        <p class="text-muted news-info-size mt-0">1s önce . 415 okuyucu</p>
+                        <p class="font-weight-bold news-size mb-1">Medicare scam calls targeting seniors...</p>
+                        <p class="text-muted news-info-size mt-0">1s önce</p>
+                        <p class="font-weight-bold news-size mb-1">Another Apple exec mulls exit amid le...</p>
+                        <p class="text-muted news-info-size mt-0">7a önce</p>
+                        <p class="font-weight-bold news-size mb-1">Waymo recalls robotaxi software sfte...</p>
+                        <p class="text-muted news-info-size mt-0">37a önce</p>
+                    </div>
+                    <div class="d-flex">
+                        <p class="news-size mt-0 mr-1">Daha fazla göster</p>
+                        <i class="bi bi-chevron-compact-down"></i>
+                    </div>
+                    <div class="d-flex">
+                        <p class="text-muted news-size">LinkedIn'de öne çıkan bulmaca</p>
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex mr-auto">
+                                <img src="image/play.png" class="card-img-top play-img-size" alt="play">
+                                <div class="d-flex flex-column ml-2">
+                                    <p class="font-weight-bold text-name mb-0">Zip - hızlı zeka oyunu</p>
+                                    <p class="text-muted follow-text mb-1">En fazla 60 saniyede çözün!</p>
+                                    <p class="text-muted follow-text mt-1">19 bağlantı oynadı</p>
+                                </div>
+                            </div>
+                            <i class="bi bi-chevron-right text-muted ml-3 chevron-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <img src="image/advert.png" class="rounded-lg mt-2 d-block" style="width: 18rem;" alt="advert">
+                <div class="card mt-2" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <span class="clue mr-2">İPUCU</span>
+                            <span class="text-muted clue-text">LinkedIn'in Windows uygulamasını deneyin</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mt-3 ml-5">
+                    <p class="text-muted end-text mr-3">Hakkında</p>
+                    <p class="text-muted end-text mr-3">Erişebilirlik</p>
+                    <p class="text-muted end-text">Yardım Merkezi</p>
+                </div>
+                <div class="d-flex align-items-center mt-1 ml-5">
+                    <p class="text-muted end-text mr-2">Gizlilik ve Koşullar <i class="bi bi-caret-down-fill"></i></p>
+                    <p class="text-muted end-text ml-2">Reklam Tercihleri</p>
+                </div>
+                <div class="d-flex align-items-center mt-1 ml-5">
+                    <p class="text-muted end-text mr-2 ml-4">Reklam</p>
+                    <p class="text-muted end-text ml-2">Ticari Hizmetler <i class="bi bi-caret-down-fill"></i></p>
+                </div>
+                <div class="d-flex align-items-center mt-1 ml-5">
+                    <p class="text-muted end-text mr-2">LinkedIn uygulamasını yükle</p>
+                    <p class="text-muted end-text ml-2">Daha Fazla</p>
+                </div>
+                <div class="d-flex align-items-center mt-1 ml-4">
+                    <p class="font-weight-bold end-logo-text mr-2">LinkedIn <i class="bi bi-linkedin"></i></p>
+                    <p class="end-text-linkedin ml-1">LinkedIn Corporation © 2025</p>
+                </div>
+
+            </aside>
+        </section>
+    </main>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>
